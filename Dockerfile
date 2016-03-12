@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Elie Charra <elie.charra [at] kitpages.fr>
+MAINTAINER Jérémy Crombez <jeremy.crombez@gmail.com>
 
 RUN apt-get -qq update && apt-get -qq -y --no-install-recommends install \
     supervisor \

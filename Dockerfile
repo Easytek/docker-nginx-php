@@ -23,7 +23,6 @@ RUN apt-get -qq update && apt-get -qq -y --no-install-recommends install \
 COPY config/vhost.conf /etc/nginx/sites-enabled/default
 COPY config/supervisord/conf.d /etc/supervisor/conf.d
 
-ONBUILD ADD . /var/www
 WORKDIR /var/www
 
 EXPOSE 80

@@ -2,6 +2,8 @@ FROM debian:jessie
 
 MAINTAINER Jérémy Crombez <jeremy.crombez@gmail.com>
 
+RUN export DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get -qq update && apt-get -qq -y --no-install-recommends install \
     supervisor \
     ca-certificates \
